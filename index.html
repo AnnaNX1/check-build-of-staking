@@ -11,6 +11,7 @@
     <script>
       (async () => {
         await new Promise(resolve => setTimeout(resolve, 1000));
+        console.log(await UniqueStaking.stakesPerAccount('5CDBpcN5jAYiHtUoMmb2PhUE8WVG7xPYcbBWZuAd2MkMXgoC', 'quartz'));
         console.log(await UniqueStaking.totalStaked('5CDBpcN5jAYiHtUoMmb2PhUE8WVG7xPYcbBWZuAd2MkMXgoC', 'quartz'));
         console.log(await UniqueStaking.unstake('polkadot-js/5CDBpcN5jAYiHtUoMmb2PhUE8WVG7xPYcbBWZuAd2MkMXgoC', 'quartz'));
       })();
